@@ -35,26 +35,4 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-EDITOR=vim
-
-rtm () {
-  echo d rtm $* | bti
-}
-
-eval $( dircolors $HOME/.dir_colors )
-
-[[ $TERM == 'screen' || $TERM == 'xterm' ]] && export TERM=${TERM}-256color
-
-[[ -d $HOME/git/ghar/bin ]] && export PATH=$PATH:$HOME/git/ghar/bin
-
-# TODO: Make common include for bash & zsh
-#
-vim_bundle_add_github () {
-  [[ $# != 2 ]] && echo $(basename $0) githubrepo localmodulename && return 1 
-  cd $HOME/git/ghar/vimrc/
-  git submodule add https://github.com/$1 .vim/bundle/$2
-}
-
-  
-
-
+[[ -f $HOME/.commonsh ]] && source $HOME/.commonsh
