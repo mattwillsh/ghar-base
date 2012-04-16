@@ -1,0 +1,11 @@
+# To use:
+#   git config --global core.excludesfile ~/.gitignore_global
+# Packages #
+############
+*.rpm
+
+# Private keys #
+################
+# Safety feature to avoid key leakages
+id_rsa
+secring.gpg
