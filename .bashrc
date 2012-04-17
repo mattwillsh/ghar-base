@@ -5,4 +5,4 @@ if [ -f /etc/bashrc ]; then
   . /etc/bashrc
 fi
 
-[[ $HOME/.commonsh ]] && source $HOME/.commonsh
+[[ $HOME/.commonrc ]] && source $HOME/.commonrc

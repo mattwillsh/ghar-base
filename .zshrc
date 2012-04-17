@@ -35,4 +35,4 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-[[ -f $HOME/.commonsh ]] && source $HOME/.commonsh
+[[ -f $HOME/.commonrc ]] && source $HOME/.commonrc
