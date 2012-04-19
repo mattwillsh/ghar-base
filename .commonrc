@@ -11,10 +11,11 @@ rtm () {
 
 # Add ghar to PATH and add completion if running bash
 [[ -d $HOME/git/ghar/bin ]] && export PATH=$PATH:$HOME/git/ghar/bin
-[[ $( basename $SHELL) == 'bash' ]]  && source $HOME/git/ghar/bash-completion.sh
 
 # Setup vim
 [[ -f $HOME/.vim/setup.sh ]] && $HOME/.vim/setup.sh
 
 # Setup dircolors
-[[ -f $HOME/.dir_colors ]] && eval $( dircolors $HOME/.dir_colors )
+if [[ -f $HOME/.dir_colors && -e $( which dircolors ) ]]; then
+  eval $( dircolors $HOME/.dir_colors )
+fi

@@ -6,3 +6,4 @@ if [ -f /etc/bashrc ]; then
 fi
 
 [[ $HOME/.commonrc ]] && source $HOME/.commonrc
+source $HOME/git/ghar/ghar-bash-completion.sh
