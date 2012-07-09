@@ -15,11 +15,6 @@ rtm () {
 # Setup vim
 [[ -f $HOME/.vim/setup.sh ]] && $HOME/.vim/setup.sh
 
-# Setup dircolors
-if [[ -f $HOME/.dir_colors && -e $( which dircolors ) ]]; then
-  eval $( dircolors $HOME/.dir_colors )
-fi
-
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
