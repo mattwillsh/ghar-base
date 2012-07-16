@@ -117,4 +117,4 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 # Run keychain if it's installed and source the configuration
-[ -x $(which keychain) ] && keychain && source $HOME/.keychain/$(hostname)-sh
+keychain -v >/dev/null 2>&1 && keychain && source $HOME/.keychain/$(hostname)-sh
