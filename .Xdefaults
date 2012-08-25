@@ -32,9 +32,7 @@ URxvt.lineSpace:            0
 URxvt.allow_bold:           false
 ! URxvt.font: xft:Inconsolata:pixelsize=16:hinting=true:hintstyle=hintfull:antialias=true
 URxvt.font: xft:Inconsolata for Powerline:size=13
-!URxvt.font: xft:Envy Code R for Powerline:size=12
 URxvt.boldFont: xft:Inconsolata for Powerline:bold:size=13
-!URxvt.italicFont: xft:Envy Code R for Powerline:italic:size=12
 
 
 ! Fix font space
