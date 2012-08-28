@@ -10,3 +10,4 @@ fi
 
 [[ $HOME/.commonrc ]] && source $HOME/.commonrc
 source $HOME/git/ghar/ghar-bash-completion.sh
+[[ $HOME/.bash_prompt ]] && source $HOME/.bash_prompt
