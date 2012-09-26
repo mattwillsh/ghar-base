@@ -118,3 +118,8 @@ fi
 
 # Run keychain if it's installed and source the configuration
 keychain -v >/dev/null 2>&1 && keychain && source $HOME/.keychain/$(hostname)-sh
+
+if [ -f $HOME/.localrc ]
+then
+  . $HOME/.localrc
+fi
