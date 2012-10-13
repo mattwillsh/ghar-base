@@ -15,7 +15,7 @@ source $HOME/git/ghar/ghar-bash-completion.sh
 gitcomp=/usr/share/doc/git-1.7.1/contrib/completion/git-completion.bash
 test -f $gitcomp && . $gitcomp
 
-if [[ $( which hub ) ]]
+if [[ $( which hub 2>/dev/null ) ]]
 then
   eval "$( hub alias -s )"
 # hub tab-completion script for bash.
