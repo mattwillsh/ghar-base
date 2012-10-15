@@ -44,5 +44,3 @@ EOF
   __git_all_commands=""
 fi
 fi
-
-
