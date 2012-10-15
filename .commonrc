@@ -123,3 +123,23 @@ if [ -f $HOME/.localrc ]
 then
   . $HOME/.localrc
 fi
+
+if [ -d $HOME/.local/ec2-api-tools ]
+then
+  export JAVA_HOME=/usr
+  export EC2_HOME=$HOME/.local/ec2-api-tools
+  export PATH=$PATH:$EC2_HOME/bin
+fi
+
+if [ -d $HOME/.local/IAMCli ]
+then
+  export AWS_IAM_HOME=$HOME/.local/IAMCli
+  export PATH=$PATH:$AWS_IAM_HOME/bin
+fi
+
+if [ -f $HOME/.aws-credentials ]
+then
+  export AWS_CREDENTIAL_FILE=$HOME/.aws-credentials
+  . $HOME/.aws-credentials
+fi
+
