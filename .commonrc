@@ -138,3 +138,8 @@ then
   . $HOME/.localrc
 fi
 
+if [[ -d /var/cfengine/bin/ ]]
+then
+  PATH=$PATH:/var/cfengine/bin
+fi
+
