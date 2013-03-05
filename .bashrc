@@ -19,14 +19,14 @@ case $(uname -s) in
 esac
 export gitdir
 
-test -f ${s=$HOME/.ghar-bash-completion.sh} && . $s
-test -f ${s=$HOME/.git-completion.bash} && . $s
-test -f ${s=$HOME/.bash_prompt} && . $s
+test -f ~/.ghar-bash-completion.sh && . ~/.ghar-bash-completion.sh
+test -f ~/.git-completion.sh && . ~/.git-completion.sh
+test -f ~/.bash_prompt} && . ~/.bash_prompt
 
 export EDITOR=vim
 
 # Add ghar to PATH and add completion if running bash
-[[ -d ${s=$gitdir/ghar/bin} ]] && export PATH=$s:$PATH
+[[ -d $gitdir/ghar/bin ]] && export PATH=$gitdir/ghar/bin:$PATH
 
 # Setup vim
 [[ -f ${s=$HOME/.vim/setup.sh} ]] && $s
