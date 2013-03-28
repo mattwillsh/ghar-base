@@ -12,10 +12,8 @@ if [ -f ~/.bashrc ]; then
 fi
 
 ### Text editing
-[[ -f '/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' ]] && \
-	alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 export EDITOR='vi'
-alias subl 2>&1 >/dev/null && export EDITOR='subl -w'
+which subl 2>&1 >/dev/null && export EDITOR='subl -w'
 [[ -f $HOME/.vim/setup.sh ]] && $HOME/.vim/setup.sh
 
 ### Ruby environment
@@ -33,3 +31,12 @@ fi
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
+
+# Disable hibernate mode
+#sudo pmset -a hibernatemode 0
+# Disable sudden motion sensor
+#sudo pmset -a sms 0
+
+
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+source $HOME/.local/ansible/bin/activate
