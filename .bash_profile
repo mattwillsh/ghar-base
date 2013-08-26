@@ -4,7 +4,7 @@
 export PATH=$HOME/.local/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/python:$PATH
 
 export gitdir=$HOME/git
-[[ $( uname -s ) == 'Darwin' ]] && export gitdir=$HOME/Development
+[[ $( uname -s ) == 'Darwin' ]] && export gitdir=$HOME/Documents/Development
 
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
