@@ -67,4 +67,4 @@ then
 fi
 
 
-
+export HOMEBREW_TEMP=~/.tmp

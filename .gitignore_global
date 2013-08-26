@@ -9,3 +9,5 @@
 # Safety feature to avoid key leakages
 id_rsa
 secring.gpg
+
+.DS_Store

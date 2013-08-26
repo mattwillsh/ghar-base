@@ -40,3 +40,7 @@ fi
 
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 source $HOME/.local/ansible/bin/activate
+
+[[ -d ~/perl5 ]] && source ~/perl5/perlbrew/etc/bashrc
+[[ -d /usr/local/share/npm/bin ]] && export PATH=$PATH:/usr/local/share/npm/bin
+
